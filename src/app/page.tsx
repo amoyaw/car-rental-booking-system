@@ -29,7 +29,7 @@ export default function Home() {
         <div className="container mx-auto relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Premium Car Rental<br />Made Simple
+               Car Rental<br />Made Simple
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
               Experience luxury and comfort with our extensive fleet of premium vehicles. 
@@ -144,7 +144,7 @@ export default function Home() {
             <div>
               <h3 className="font-bold text-lg mb-4 flex items-center gap-2">
                 <Car className="w-5 h-5" />
-                LuxeDrive
+                The Garage 
               </h3>
               <p className="text-sm text-muted-foreground">
                 Premium car rental service for the modern traveler.
@@ -176,7 +176,7 @@ export default function Home() {
             </div>
           </div>
           <div className="border-t pt-8 text-center text-sm text-muted-foreground">
-            <p>&copy; 2024 LuxeDrive. All rights reserved.</p>
+            <p>&copy; 2024 The Garage. All rights reserved.</p>
           </div>
         </div>
       </footer>
