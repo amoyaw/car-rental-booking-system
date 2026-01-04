@@ -30,7 +30,7 @@ export default function VehiclesPage() {
           <div className="mb-8">
             <h1 className="text-4xl font-bold mb-4">Our Vehicle Fleet</h1>
             <p className="text-muted-foreground">
-              Browse our complete collection of premium rental vehicles
+              Browse our collection of rental vehicles
             </p>
           </div>
 
