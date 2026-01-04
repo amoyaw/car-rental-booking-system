@@ -29,7 +29,6 @@ export default function CheckoutPage() {
   const [billingData, setBillingData] = useState({
     address: '',
     city: '',
-    zipCode: '',
     country: '',
   });
 
