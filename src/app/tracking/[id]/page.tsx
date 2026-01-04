@@ -128,7 +128,7 @@ export default function TrackingPage() {
 
           <Card>
             <CardHeader>
-              <CardTitle>Rental Status Timeline</CardTitle>
+              <CardTitle>Rental Timeline</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="space-y-6">
@@ -197,7 +197,7 @@ export default function TrackingPage() {
                 <div className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 text-primary mt-0.5" />
                   <div>
-                    <p className="font-medium">LuxeDrive Downtown Location</p>
+                    <p className="font-medium">The Garage Downtown Location</p>
                     <p className="text-sm text-muted-foreground">123 Main Street, New York, NY 10001</p>
                   </div>
                 </div>
