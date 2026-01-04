@@ -108,7 +108,7 @@ export default function AdminPage() {
     );
 
     setVehicles(updatedVehicles);
-    toast.success('Vehicle updated successfully!');
+    toast.success('Vehicle updated');
     setShowEditVehicle(false);
     setSelectedVehicle(null);
     resetForm();
@@ -117,7 +117,7 @@ export default function AdminPage() {
   const handleDeleteVehicle = (id: string) => {
     if (confirm('Are you sure you want to delete this vehicle?')) {
       setVehicles(vehicles.filter(v => v.id !== id));
-      toast.success('Vehicle deleted successfully!');
+      toast.success('Vehicle deleted');
     }
   };
 
@@ -143,7 +143,7 @@ export default function AdminPage() {
     );
     setBookings(updatedBookings);
     localStorage.setItem('bookings', JSON.stringify(updatedBookings));
-    toast.success('Booking status updated!');
+    toast.success('Booking status updated');
   };
 
   const totalRevenue = bookings.reduce((sum, b) => sum + b.totalPrice, 0);
@@ -376,7 +376,7 @@ export default function AdminPage() {
                         </div>
                         <div>
                           <p className="font-semibold">{user.name}</p>
-                          <p className="text-sm text-muted-foreground">{user.email}</p>
+                          <p classname="font-semibold">{user.phone.number}</p>
                         </div>
                       </div>
                       <Badge>Admin</Badge>
@@ -431,6 +431,7 @@ export default function AdminPage() {
                 >
                   <option value="">Select type</option>
                   <option value="Sedan">Sedan</option>
+                  <option value ="Truck">Truck</option>
                   <option value="SUV">SUV</option>
                   <option value="Sports">Sports</option>
                 </select>
@@ -488,12 +489,11 @@ export default function AdminPage() {
                   <option value="Petrol">Petrol</option>
                   <option value="Diesel">Diesel</option>
                   <option value="Electric">Electric</option>
-                  <option value="Hybrid">Hybrid</option>
                 </select>
               </div>
             </div>
             <div className="space-y-2">
-              <Label htmlFor="image">Image URL</Label>
+              <Label htmlFor="image">Image</Label>
               <Input
                 id="image"
                 type="url"
@@ -548,6 +548,7 @@ export default function AdminPage() {
                   required
                 >
                   <option value="Sedan">Sedan</option>
+                  <option value = "Truck">Truck</option>
                   <option value="SUV">SUV</option>
                   <option value="Sports">Sports</option>
                 </select>
@@ -604,13 +605,11 @@ export default function AdminPage() {
                 >
                   <option value="Petrol">Petrol</option>
                   <option value="Diesel">Diesel</option>
-                  <option value="Electric">Electric</option>
-                  <option value="Hybrid">Hybrid</option>
-                </select>
+                  <option value= "Electric">Electric</option>                </select>
               </div>
             </div>
             <div className="space-y-2">
-              <Label htmlFor="edit-image">Image URL</Label>
+              <Label htmlFor="edit-image">Image</Label>
               <Input
                 id="edit-image"
                 type="url"
